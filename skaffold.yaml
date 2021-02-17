@@ -1,0 +1,10 @@
+apiVersion: skaffold/v2beta9
+kind: Config
+build:
+  artifacts:
+  - image: <accountid>.dkr.ecr.us-east-1.amazonaws.com/skaffold-5337
+    context: .
+    docker:
+      dockerfile: Dockerfile
+  local:
+    push:
